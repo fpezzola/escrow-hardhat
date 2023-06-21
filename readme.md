@@ -1,6 +1,8 @@
 # Decentralized Escrow Application
 
-This is an Escrow Dapp built with [Hardhat](https://hardhat.org/).
+This is an Escrow Dapp built with [Hardhat](https://hardhat.org/) and React.
+
+Escorws will be persisted in the blockchain by the `EscrowsManager` contract that has a method to list all the escrows paginated. Users can list scoped escrows only (where the `msg.sender` is involved in any role).
 
 ## Project Layout
 
@@ -23,4 +25,3 @@ Compile the contracts using `npx hardhat compile`. The artifacts will be placed 
 `cd` into the `/app` directory and run `npm install`
 
 To run the front-end application run `npm start` from the `/app` directory. Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
